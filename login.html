@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--uso de iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>formulario</title>
+</head>
+<body onload="javascript:logIn()">
+    <main id="Log-In" >
+        
+        <div class="container-form sign-up">
+            <div class="welcome">
+                <div class="mensaje">
+                    <h2>Bienvenido a Alcasec</h2>
+                    <p>si ya tienes una cuenta por favor inicia sesion aquí</p>
+                    <button class="sign-up-btn ">iniciar Sesion</button>
+                </div>
+            </div>
+            
+            <form class="formulario">
+                <h2 class="crearCuenta">crear  una cuenta</h2>
+                <div class="icono">
+                    <div class="bordeIcono">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABxElEQVRIS8WVfVEDQQzFWwWAg+IAHBQFgAKKAkABRQGggEMBOOihAFBAHYADeL+b5Gab2b2PP27IzJvd7iV5+dhs57OJZT6x/9m/ERwpszPhVFgkWe4n+x/b11q3wqOtO0XJZXAtjVvTwhC4s1hRCAmAgJBLoUqVIgHK7+b0PBdRZLDfENwLS+FY+HC9SLDWhyvhJFUqOOWYDJ6EN4v8W+urQHCNRIIXnZEFUUQhOoDUBghwSsTYfAmcHZQIUMCYWrpASPo0PRWckikO6REgm5XQBh4z8BRTArLC+YPwbI74DSnBQOLiBGTQXIwcQaXzG7PAEQQ49zN3xm2DJL05vQS/wZk7OdT5NomUrdf/Tvu1fRtNQISQdBGk2fUSxB54idIoY4m4klxNZDQBRgweg0QP6A/iTaZsNNknfdAtqmXQDor2C4FG+3PgGXBN47T3EmxkRPNyg7Yysj2tnwJl8cidlDnirLWP15Sm4ggF0h8jZApBJbRzlHvs0mkeSuJvEr2hJ7VHlnuuyYBaIl6GWAq3xzG9IXqE6HcGsvSPhtGFsDQH7jC30mwy5Rnx69rqlQiiIyItSSm7Rn8oQVcGnd8mJ/gDAK1yGX6mKdEAAAAASUVORK5CYII="/>
+                    </div>
+                    <div class="bordeIcono">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABS0lEQVRIS92V4RHBQBCF6YAOlKCEqAAl6IAKRAXoQAeoQHSgAzqgBO8zd+aczUUykz92ZsfI7u17+/ay6XZatm7L9Tv/B9CTZI8fZMuUs5QP5YX8LN/IOT+RH3ydWKK9Aiv5JQEyV2xtxG8OYKvf3MdDANDvDnnmWMR1yLm6QhYHuoccJOnsa8gAUASjZRJDyTL9PyW6I/eDnCURGoaGnmgMM8CRscx2DuAdDwEGeoqjL8NrYnS9CA+WzcDLVBeE4oCYHfCQ9mOJ6oCMlFykAJAIkCYSMeB+zMZaFRRnDlkd6k77D3k4bwFQOHUVLVxkQZ4vK1t2uTJZBb8Y0kxj7f3B1DZFKkCqhs7LCCHTLACuKMXHcvZOmcGca7lLtRkCeMaZDlS9B4UrnlqKL1yrAySB/cB1Qh5s8aOc1VFZ2Hf1f1+01LwaxVqX6AnaVzoZXB612wAAAABJRU5ErkJggg=="/>
+                    </div>
+                    <div class="bordeIcono">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABt0lEQVRIS7WV0VHDQAxEkw6gA9NB6MBUAFRA6AAqIFQAHRAqACqAVAAd4A6gBPZ5Tpm1cBz7I5rROLlbaaU9+TyfHdjmB84/20dwpAIW8qvyrEpBv3p+yd/k66EihwhqBT6UxEM5Gm3e7yLaRbBSwN1E+R6Fv80xfQQ3pfKJ+Vs4cl17YCa40OZLAbzq+Sw/ly/l6I5jlWGQh26JxS7lxLaWCT61xqFi3jKHjQVBkDRl3bsGc9xH4NWzTxVUM8ayrMi0zh08aWFp2c70+2NMdmHo8Mew2+JconcB6gJixk9HJg+Yx29lcoJvIauCniJPEGQF2txOQItxmEiDRFOM6YtJ2uZ2Ap+gziSMZHEFGsWc5A64FpiGMN5KRnWMLQVCorDeQ44xpfqQah8JOOIoLmIg6R1TNmgTIPr727nWf8j8RUPzOiUmRyNnAltsfpMJYNzYREMqo0Ja7twxZc8lJR/W6brvsluV6qk6J40kPAPna369tOu7rus4cF44fCOH0C1fDyTn4nMZB79oC4HRuZL/q0xrQUBCZMkFDHbglXIGTenE1yGu5ZxPp2oH7fsmJ1Wm/z04wR8HGFkZKFNq2QAAAABJRU5ErkJggg=="/>
+                    </div>
+                </div>
+                <p class="cuentaGratis">crear una cuenta gratis </p>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="registrarse" onclick="entrar()">
+
+            </form>
+        </div>
+        <div class="container-form sign-in">
+            <form class="formulario">
+                <h2 class="crearCuenta">iniciar sesion</h2>
+                <div class="icono">
+                    <div class="bordeIcono">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABxElEQVRIS8WVfVEDQQzFWwWAg+IAHBQFgAKKAkABRQGggEMBOOihAFBAHYADeL+b5Gab2b2PP27IzJvd7iV5+dhs57OJZT6x/9m/ERwpszPhVFgkWe4n+x/b11q3wqOtO0XJZXAtjVvTwhC4s1hRCAmAgJBLoUqVIgHK7+b0PBdRZLDfENwLS+FY+HC9SLDWhyvhJFUqOOWYDJ6EN4v8W+urQHCNRIIXnZEFUUQhOoDUBghwSsTYfAmcHZQIUMCYWrpASPo0PRWckikO6REgm5XQBh4z8BRTArLC+YPwbI74DSnBQOLiBGTQXIwcQaXzG7PAEQQ49zN3xm2DJL05vQS/wZk7OdT5NomUrdf/Tvu1fRtNQISQdBGk2fUSxB54idIoY4m4klxNZDQBRgweg0QP6A/iTaZsNNknfdAtqmXQDor2C4FG+3PgGXBN47T3EmxkRPNyg7Yysj2tnwJl8cidlDnirLWP15Sm4ggF0h8jZApBJbRzlHvs0mkeSuJvEr2hJ7VHlnuuyYBaIl6GWAq3xzG9IXqE6HcGsvSPhtGFsDQH7jC30mwy5Rnx69rqlQiiIyItSSm7Rn8oQVcGnd8mJ/gDAK1yGX6mKdEAAAAASUVORK5CYII="/>
+                    </div>
+                    <div class="bordeIcono">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABS0lEQVRIS92V4RHBQBCF6YAOlKCEqAAl6IAKRAXoQAeoQHSgAzqgBO8zd+aczUUykz92ZsfI7u17+/ay6XZatm7L9Tv/B9CTZI8fZMuUs5QP5YX8LN/IOT+RH3ydWKK9Aiv5JQEyV2xtxG8OYKvf3MdDANDvDnnmWMR1yLm6QhYHuoccJOnsa8gAUASjZRJDyTL9PyW6I/eDnCURGoaGnmgMM8CRscx2DuAdDwEGeoqjL8NrYnS9CA+WzcDLVBeE4oCYHfCQ9mOJ6oCMlFykAJAIkCYSMeB+zMZaFRRnDlkd6k77D3k4bwFQOHUVLVxkQZ4vK1t2uTJZBb8Y0kxj7f3B1DZFKkCqhs7LCCHTLACuKMXHcvZOmcGca7lLtRkCeMaZDlS9B4UrnlqKL1yrAySB/cB1Qh5s8aOc1VFZ2Hf1f1+01LwaxVqX6AnaVzoZXB612wAAAABJRU5ErkJggg=="/>
+                    </div>
+                    <div class="bordeIcono">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABt0lEQVRIS7WV0VHDQAxEkw6gA9NB6MBUAFRA6AAqIFQAHRAqACqAVAAd4A6gBPZ5Tpm1cBz7I5rROLlbaaU9+TyfHdjmB84/20dwpAIW8qvyrEpBv3p+yd/k66EihwhqBT6UxEM5Gm3e7yLaRbBSwN1E+R6Fv80xfQQ3pfKJ+Vs4cl17YCa40OZLAbzq+Sw/ly/l6I5jlWGQh26JxS7lxLaWCT61xqFi3jKHjQVBkDRl3bsGc9xH4NWzTxVUM8ayrMi0zh08aWFp2c70+2NMdmHo8Mew2+JconcB6gJixk9HJg+Yx29lcoJvIauCniJPEGQF2txOQItxmEiDRFOM6YtJ2uZ2Ap+gziSMZHEFGsWc5A64FpiGMN5KRnWMLQVCorDeQ44xpfqQah8JOOIoLmIg6R1TNmgTIPr727nWf8j8RUPzOiUmRyNnAltsfpMJYNzYREMqo0Ja7twxZc8lJR/W6brvsluV6qk6J40kPAPna369tOu7rus4cF44fCOH0C1fDyTn4nMZB79oC4HRuZL/q0xrQUBCZMkFDHbglXIGTenE1yGu5ZxPp2oH7fsmJ1Wm/z04wR8HGFkZKFNq2QAAAABJRU5ErkJggg=="/>
+                    </div>
+                </div>
+                <p class="cuentaGratis">¿aun no tienes cuenta? </p>
+                <input type="email" class="usuario" placeholder="Email">
+                <input type="password" class="Contraseña" placeholder="Contraseña">
+                <input type="button" value="iniciar Sesion" onclick="entrar()">
+            </form>
+            <div class="welcome">
+                <div class="mensaje">
+                    <h2>Bienvenido a Alcasec</h2>
+                    <p>si aun no tienes cuenta por favor ingresar aqui</p>
+                    <button class="sign-in-btn ">registrarse</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

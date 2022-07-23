@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--es para la estructura responsive-->
+    <meta name="description" content="es una pagina dirigida a tod aquellos que les interece la seguridad informatica">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/iconos/index.png">
+    <!--bootrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <title>ciberseguridad</title>
+<!--nombres: agustin aused, franco tocci -->
+</head>
+<body>
+    <!--barra de navegacion -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark row ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:inicio()">Alcasec</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:articulosHacking()">articulos de hacking</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:acerca()">acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:listado(0)">productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    mas información
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="javascript:ubicacion()">ubicacion</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="javascript:contacto()">contacto</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:tienda()"><img src="imagenes/shopping-cart.png" style="width: 2rem;" alt="" ></a>
+                </li>
+                
+              </ul>
+              <div class="text-end">
+                <button type="button" hrfe="login.html" class="acceso btn btn-outline-light me-2" onclick="ingresar()"><font style="vertical-align: inherit;">Acceso </font></button>
+                <button type="button" hrfe="login.html" class="acceso btn btn-warning" onclick="ingresar()"><font style="vertical-align: inherit;">Inscribirse </font></button>
+              </div>
+            </div>
+          </div>
+      </nav> 
+    </header>
+    <main>
+        <div id="contenedor">
+            <div class="conjunto">
+                <!--aca arranca el cod aside-->
+                <aside>
+                    <div class="apartado">
+                        <h2>contenidos de la pagina</h2>
+                        <ul>
+                            <li><a href="#primero" >que hacen los hackers?</a></li>
+                            <li><a href="#segundo" >herramientas de kacking</a></li>
+                            <li><a href="#tercero">que tipos de hackers existen?</a></li>
+                            <li><a href="#cuarto">que tecnicas o software utilizan</a></li>
+                            <li><a href="#quinto" >Consejos para evitar un hackeo</a></li>
+                            <li><a href="#sexto" >sistemas operativos mas usados por hackers</a></li>
+                        </ul>
+                    </div>
+            
+                </aside>
+                <!--aca estan los articulos-->
+                <section>
+                    <article id="primero">
+                        <h2>hackers</h2>
+                        <p>
+                            Para la mayoria de las personas un hacker es un delincuente que accede a equipos y redes infringiendo sus medidas de seguridad.
+                            A eso es a lo que los medios suelen referirse cuando utilizan la palabra hacker o pirata informático.
+                            Tradicionalmente, un hacker informático es un programador habilidoso y sumergido en la cultura de los ordenadores y el software.
+                        </p>
+                        <div class="hack">
+                            <img src="imagenes/pexels-sebastiaan-stam-1482476.jpg" alt="una persona con mascara" class="hacker">
+                        </div>
+                        <h3>definicion de hacker</h3>
+                        <p>Persona con grandes conocimientos de informática que se dedica a detectar fallos de seguridad en sistemas informáticos.</p>
+                    </article>
+                    <article id="segundo">
+                        <h2>herramientas de hacking</h2>
+                        <h3>nmap</h3>
+                        <p>La herramienta Nmap es una de las favoritas para los profesionales e investigadores de seguridad. Nos ayuda en la búsqueda de puertas
+                            o accesos abiertos en el sistema, realizando un análisis completo de puertos y servicios de cualquier dirección IP en nuestra compañía.
+                            <br>
+                            También nos ayuda a investigar los paquetes y respuestas de los mismos. Revisando el número de paquetes, tiempos y respuestas confiables.
+                        </p>
+                        <h3>wpscan</h3>
+                        <p>
+                            Actualmente muchas de las páginas que encontramos en internet son construidas a través del CMS WordPress. Gracias a WPSCAN podrás realizar
+                            un análisis de tu sitio web creado con WordPress. Detectando la versión, contraseñas débiles y otros problemas de configuración de la seguridad de sitio.
+                        </p>
+                        <h3>trape</h3>
+                        <p>
+                            Trape es una herramienta de investigación OSINT utilizada para rastrear personas y ejecutar ataques de ingeniería social en tiempo real. Trape fue desarrollado
+                            para mostrar cómo las grandes compañías de Internet pueden obtener información confidencial, recopilando registros de actividad sin autorización del usuario.
+                            La aplicación principal de Trape está en las agencias gubernamentales y su búsqueda de sitios web fraudulentos.
+                        </p>
+                        <h3>osmedeus</h3>
+                        <p>
+                            También es importante disponer de herramientas que trabajen de forma ofensiva que funcionen de forma totalmente automática para analizar, escanear y
+                            reconocer vulnerabilidades. Con OSMEDEUS podrás realizar escaneos de forma simultánea de un objetivo concreto. Además, tiene la capacidad de escanear
+                            dominios y subdominios con capturas de pantalla.
+                        </p>
+        
+                    </article>
+                    <article id="tercero">
+                        <h2>tipos de hackers</h2>
+                        <div class="tipos">
+                            <h3>sombrero negro</h3>
+        
+                            <p>
+                                Un hacker de sombrero negro es el ciberdelincuenteSon los que rompen sistemas de ciberseguridad para
+                                obtener acceso ilegal a un equipo o una red. Si un hacker de sombrero negro descubre una vulnerabilidad
+                                de seguridad, la aprovechará o alertará a otros hackers de la oportunidad, normalmente por un precio o beneficio personal.
+                            </p>
+                            <p>
+                                La mayoría de las veces, el objetivo último de un hacker de sombrero negro es ganar dinero, ya sea mediante el robo financiero directo,
+                                la venta de información comprometida o la extorsión. Sin embargo, a veces simplemente tratan de causar el máximo caos posible.
+                            </p>
+                            <h3>sombrero blanco</h3>
+                            <p>
+                                Los hackers de sombrero blanco son la contrapartida de los de sombrero negro. Son igual de habilidosos, pero en vez de tener objetivos delictivos,
+                                estas almas bondadosas dedican sus talentos a ayudar a las empresas a preparar sus defensas digitales.
+                                Un hacker de sombrero blanco intentará de forma intencionada entrar en un sistema, con permiso de su propietario,
+                                para identificar los puntos débiles que hay que reparar. Este tipo de trabajo también se conoce como hackeo ético.
+                            </p>
+                            <h3>sombrero gris</h3>
+                            <p>
+                                Los hackers de sombrero gris pueden infringir alguna ley o precepto ético, pero no actúan con la malicia que caracteriza al hacker de sombrero negro.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="cuarto">
+                        <h2>tecnicas o software mas usados para el ataque</h2>
+                        <ul>
+                            <li><h3>ataques DDos</h3></li>
+                            <img src="imagenes/datacenter.jpg" alt="una imagen de un servidor" class="hack">
+                            <p>
+                                El ataque DDoS envía varias solicitudes al recurso web atacado, con la intención de desbordar la capacidad del sitio web para administrar varias solicitudes
+                                y de evitar que este funcione correctamente. Entre los objetivos más comunes de los ataques DDoS se incluyen: Sitios de compra por Internet. Casinos en línea.
+                            </p>
+                            <li><h4>ingenieria social</h4></li>
+                                <p>
+                                La definición de ingeniería social abarca varios tipos de manipulación psicológica. En ocasiones, la ingeniería social puede tener resultados positivos, como
+                                fomentar comportamientos saludables. En términos de seguridad de la información, sin embargo, la ingeniería social a menudo se utiliza únicamente para beneficio
+                                del atacante. En estos casos, la ingeniería social implica manipulación para obtener información confidencial, como datos personales o financieros. Por tanto, la
+                                ingeniería social también puede definirse como un tipo de ciberdelito.
+                                </p>
+                            <li><h4>Phising</h4></li>
+                                <p>
+                                El phishing es una técnica de ciberdelincuencia que utiliza el fraude, el engaño y el timo para manipular a sus víctimas y hacer que revelen información personal confidencial.
+                                Aprenda cómo funciona para que pueda detectar y bloquear las estafas de phishing y mantener así sus datos a salvo de atacantes
+                                </p>
+                            <li><h4>keyloggers</h4></li>
+                                <p>
+                                Un Keylogger es un software simple que registra la secuencia de teclas y los trazos del teclado en un archivo de registro en el ordenador.
+                                Estos archivos de registro incluso pueden contener los ID y contraseñas de correo electrónico personales. Mientras que los registradores de
+                                pulsaciones basados en software se enfocan en los programas instalados en un ordenador, los dispositivos de hardware se enfocan en teclados,
+                                emisiones electromagnéticas, sensores de teléfonos inteligentes, etc.
+                                </p>
+                            <li><h4>wap falso</h4></li>
+                                <p>
+                                Incluso por diversión, los hackers pueden usar software para falsificar un punto de acceso inalámbrico. Este WAP se conecta al lugar público oficial WAP. Una vez
+                                que te conectas con el WAP falso, un hacker puede acceder a los datos.
+                                <br>
+                                Es uno de los ataques más fáciles de realizar y uno solo necesita un software simple y una red inalámbrica. Cualquiera puede nombrar su WAP como un nombre legítimo
+                                como «WiFi del aeropuerto de Barajas» o «WiFi de Starbucks» y comenzar a espiar. Una de las mejores formas de protegerse de tales ataques es usar un servicio VPN de calidad.
+                                </p>
+                            <li><h4>malware</h4></li>
+                                <p>
+                                    Malware es un término general para referirse a cualquier tipo de “malicious software” (software malicioso) diseñado para infiltrarse en su dispositivo sin su conocimiento.
+                                    Hay muchos tipos de malware y cada uno busca sus objetivos de un modo diferente. Sin embargo, todas las variantes comparten dos rasgos definitorios: son subrepticios y
+                                    trabajan activamente en contra de los intereses de la persona atacada.
+                                </p>
+                        </ul>
+                        <h3>tipos de malware</h3>
+                        <div class="malware">
+                            <ul>
+                                <li>spyware</li>
+                                <p>
+                                es un tipo de malware que intenta mantenerse oculto mientras registra información en secreto y sigue sus actividades en línea, tanto en equipos como en dispositivos móviles. Puede supervisar y copiar todo lo que escribe,
+                                carga, descarga y almacena. puede consumir una gran cantidad de recursos del ordenador,lo que provoca que se ejecute lentamente, retrasos entre aplicaciones o mientras está online, fallos o bloqueos frecuentes del sistema e incluso una sobrecarga del ordenador
+                                que causa daños permanentes.
+                                </p>
+                                <li>troyanos</li>
+                                <p>
+                                Un troyano es un tipo de malware disfrazado de software legítimo. Los cibercriminales a menudo lo utilizan para robar datos privados, espiar a los usuarios y obtener acceso no autorizado a los sistemas.
+                                el malware troyano se presenta como algo que deseas. A menudo se disfraza de programa de software gratuito o de archivo adjunto de correo electrónico y, tras otorgarle permiso para instalarse en el equipo,
+                                abre las puertas de entrada.Una vez que el troyano obtiene acceso a tu computadora, puede hacer prácticamente de todo, pero el objetivo de la mayoría de estos tipos de malware es lograr el control total de tu PC.
+                                Como resultado, todo lo que hagas en la computadora es registrado y enviado a un servidor especificado por el troyano, lo que puede resultar particularmente peligroso si usas tu PC para realizar transacciones financieras, puesto
+                                que el troyano enviará tu información de tarjeta de crédito y de banca a personas cuyo objetivo utilizarla o venderla. Los troyanos también pueden utilizarse para convertir tu computadora en un equipo "zombi", para permitir a un hacker usarla,
+                                junto con tu conexión a Internet, para lanzar ciberataques en todo el mundo.
+                                </p>
+                                <li>ransowere</li>
+                                <p>
+                                es un tipo de programa dañino que restringe el acceso a determinadas partes o archivos del sistema operativo infectado y pide un rescate a cambio de quitar esta restricción. Algunos tipos de ransomware cifran los archivos del sistema operativo
+                                inutilizando el dispositivo y coaccionando al usuario a pagar el rescate. Se han propuesto algunas alternativas en español al término en inglés, como 'programa de secuestro', 'secuestrador', 'programa de chantaje' o 'chantajista'.
+                                En los primeros tiempos el pago se hacía a través de cuentas bancarias de países opacos, pero como el rastreo al delincuente era posible, se pasó al uso de monedas virtuales no rastreables.
+                                </p>
+                                <li>adware</li>
+                                <p>
+                                es un componente de software que muestra anuncios. El software malicioso toma control de su navegador para seguir su actividad, enseñarle anuncios falsos y redirigir su tráfico hacia páginas web sospechosas.
+                                En casos graves, toma control de su ordenador por completo y no solo de su navegador.
+                                </p>
+                            </ul>
+                        </div>
+                    </article>
+                    <article id="quinto">
+                        <h2>Consejos para evitar un hackeo</h2>
+                        <p>
+                            Sea consciente de los datos que comparte. No tiene que borrar su perfil en Facebook o en Twitter para estar a salvo, pero les facilita la tarea a los hackers si en las redes sociales publica fechas de nacimiento, películas favoritas o el nombre de soltera de su mamá,
+                            datos que a menudo utiliza para contestar las preguntas de seguridad que le dan acceso a sus cuentas online o por teléfono. <br>
+        
+                            Elija contraseñas complicadas. A un hacker le puede llevar tan solo 10 minutos descifrar una contraseña formada por seis letras minúsculas, pero algunos sitios gratuitos como safepasswd.com lo pueden ayudar a crear una contraseña
+                            casi inviolable que combine letras mayúsculas, símbolos y números. Usar frases como contraseñas también suele funcionar (el sitio passphra.se/es lo puede ayudar a crearlas). A un hacker podría llevarle meses descifrar la frase “diga no a los ciberladrones”,
+                            por ejemplo, al menos hasta este momento. <br>
+        
+                            Use la verificación en dos pasos. Facebook y Gmail cuentan con una función de seguridad que, una vez activada, le solicita que introduzca dos contraseñas para entrar a su cuenta: su contraseña normal y un código que esas empresas le envían en un mensaje de texto a su celular.
+                            “El paso adicional representa un leve inconveniente, pero vale la pena cuando la alternativa es ser víctima de un hacker”, señala Matt Elliot, escritor de tecnología del sitio cnet.com. Para establecer la verificación en Gmail, haga clic en Cuenta y luego en Seguridad.
+                            En Facebook, inicie la sesión, haga clic en el ícono inferior junto a Página Inicial, y después en Configuración de la Cuenta, Seguridad y Aprobaciones de Inicio de Sesión. <br>
+        
+                            Use con moderación los puntos de acceso Wi-Fi. Los principales proveedores de Internet inalámbrico público gratuito (un servicio disponible en puntos de acceso situados en cafeterías, aeropuertos y hoteles) no requieren un encriptamiento de los datos que circulan entre Internet y las laptops,
+                            lo que implica que cualquier información —como su contraseña de correo electrónico o su estado de cuenta bancaria— es vulnerable a los hackers. En una PC, haga clic en el ícono de conexión inalámbrica en la barra de tareas para desactivarla. En una Mac, haga clic en el ícono de Wi-Fi en la barra del menú para desactivar Wi-Fi. <br>
+        
+                            Resguarde su información. En cuestión de minutos, los hackers pueden borrar de su computadora los mensajes electrónicos, las fotografías, los documentos y la música que ha atesorado por muchos años.  <br>
+                            Proteja sus archivos electrónicos utilizando alguno de los sistemas de resguardo sencillos y gratuitos disponibles en Internet; por ejemplo, crashplan.com y dropbox.com. <br>
+                        </p>
+                    </article>
+                    <article id="sexto">
+                        <h2>sistemas operativos mas usados por hackers</h2>
+                        <ul>
+                            <li><h4>kali Linux</h4></li>
+                                <p>
+                                    kali Linux es ideal para realizar pruebas de pentesting, ¿por qué? es mucho más rápida, fácil de usar, intuitiva, además por ser el sistema operativo más conocido, existen varios foros, tutoriales y manuales que hablan sobre esta distro.
+                                </p>
+                            <li><h4>parrot security os</h4></li>
+                                <p>
+                                    Parrot OS tiene un diseño mucho mejor que kali Linuxla distro recibe actualizaciones constantemente, algo muy importante que tenemos que tomar en cuenta es el anonimato, este sistema pone a nuestras manos herramientas que nos brindan privacidad a la hora de navegar por internet de una manera muy rápida y fácil.
+                                </p>
+                            <li><h4>black arch</h4></li>
+                                <p>
+                                    A simple vista, parece un sistema mucho más profesional y complejo, esta distribución no brinda mucha estética, por lo que generará menos distracciones y hará nuestras prácticas más serias, una de sus principales características es que cuenta con varias herramientas preinstaladas en la distribución.
+                                </p>
+                        </ul>
+                    </article>
+                    <article id="final">
+                        <p>tocando en el sigiente boton te redigirira a ver los preductos sobre hacking</p>
+                        <a href="javascript:articulosHacking()" class="btn btn-primary" id="boton">conocer los productos</a>
+                    </article>
+                    </section>
+                </main>
+            </div>
+        </div> 
+    </main>
+    <footer class="footer">
+        <nav class="nav-footer">
+            <div class="menuFin">
+                <div class="columna">
+                    <h4><a href="javascript:acerca()">acerca de nosotros</a></h4>
+                    <div class="parrafo-footer">
+                        <p>Somos una empresa que busca que los jovenes y los mas grandes puedan aprender a protegerser en tema de seguridad informatica </p>
+                    </div>
+                    
+                </div>
+                <div class="columna">
+                    <h4><a href="javascript:detalle()">articulos</a></h4>
+                    <ul>
+                        <li><a href="javascript:detalle()">rubber duky</a></li>
+                        <li><a href="javascript:detalle()">screen crab</a></li>
+                        <li><a href="javascript:detalle()">bash bunny</a></li>
+                        <li><a href="javascript:detalle()">shark jack</a></li>
+                    </ul>
+  
+                </div>
+                <div class="columna">
+                    <h4><a href="javascript:contacto()">contacto</a></h4>
+                    <ul>
+                        <li><a href="javascript:contacto()">email</a></li>
+                        <li><a href="javascript:contacto()">telefono</a></li>
+                        <li><a href="javascript:contacto()">ubicacion</a></li>
+                    </ul>
+  
+                </div>
+                <div class="columna">
+                    <h4>redes sociales</h4>
+                    <div class="redes">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              <p class="fw-bold " style="color:#ffff ;">© 2022 Copyright: Agustin Aused</p> 
+            </div>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
